@@ -1,0 +1,20 @@
+---
+title: "R Markdown and Leaflet"
+author: "Jaserji"
+date: "5/15/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+library(dplyr)
+```
+
+
+```{r}
+m <- leaflet() %>% addTiles() %>% addMarkers(lng=-6.288, lat=36.527, popup="Cádiz, Spain")
+m
+```
+
+
